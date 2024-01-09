@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    form {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Encuesta</h2>
+
+    <label for="pregunta1">1. ¿Qué tan satisfecho estás con nuestro servicio?</label>
+    <input type="radio" name="pregunta1" value="MuySatisfecho"> Muy Satisfecho
+    <input type="radio" name="pregunta1" value="Satisfecho"> Satisfecho
+    <input type="radio" name="pregunta1" value="Neutral"> Neutral
+    <input type="radio" name="pregunta1" value="Insatisfecho"> Insatisfecho
+    <input type="radio" name="pregunta1" value="MuyInsatisfecho"> Muy Insatisfecho
+
+    <label for="pregunta2">2. ¿Cuál es tu color favorito?</label>
+    <input type="text" name="pregunta2">
+
+    <label for="pregunta3">3. ¿Recomendarías nuestro servicio a tus amigos?</label>
+    <input type="checkbox" name="pregunta3" value="Si"> Sí
+    <input type="checkbox" name="pregunta3" value="No"> No
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
